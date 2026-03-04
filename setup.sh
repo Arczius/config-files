@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Starting the setup process"
-
-echo "\n\n"
+echo "Starting the setup process\n\n"
 
 echo "downloading the Lilex NF"
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Lilex.zip -O Lilex.zip
