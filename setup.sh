@@ -15,3 +15,8 @@ mkdir ~/.local/share/fonts/LilexNerdFont/
 unzip -o Lilex.zip -d ~/.local/share/fonts/LilexNerdFont/
 fc-cache
 rm Lilex.zip
+
+echo "installing tools"
+sudo dnf -y install neovim zellij
+
+cp -a ./config/* ~/.config/
