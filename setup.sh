@@ -17,6 +17,9 @@ fc-cache
 rm Lilex.zip
 
 echo "installing tools"
-sudo dnf -y install neovim zellij
+sudo dnf -y copr enable varlad/zellij
+sudo dnf install -y --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+
+sudo dnf -y install neovim zellij zsh lazygit
 
 cp -a ./config/* ~/.config/
